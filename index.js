@@ -1,4 +1,3 @@
-
 /*
  * 微信模拟器 / WeChat Simulator for SillyTavern
  * v0.1.0
@@ -585,3 +584,8 @@ function init() {
     console.log('[微信模拟器] initialized v0.1.0');
 }
 export { init };
+
+// 监听酒馆加载，主动执行插件初始化
+jQuery(async () => {
+    init();
+});
